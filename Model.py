@@ -64,7 +64,7 @@ model.summary()
 
 initial_learning_rate = 0.001
 lr_schedule = tf.keras.optimizers.schedules.ExponentialDecay(
-    initial_learning_rate, decay_steps=10000, decay_rate=0.9, staircase=True)
+    initial_learning_rate, decay_steps=768, decay_rate=0.9, staircase=True)
 optimizer = tf.keras.optimizers.Adam(learning_rate=lr_schedule)
 model.compile(loss='categorical_crossentropy', optimizer=optimizer, metrics=['accuracy'])
 
