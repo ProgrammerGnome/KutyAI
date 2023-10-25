@@ -47,8 +47,7 @@ test_data = test_datagen.flow_from_directory(
     test_dir,
     target_size=IMAGE_SHAPE,
     batch_size=BATCH_SIZE,
-    class_mode="categorical",
-    shuffle=True
+    class_mode="categorical"
 )
 
 data_dir = pathlib.Path("dogs/train")
