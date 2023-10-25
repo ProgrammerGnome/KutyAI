@@ -19,7 +19,7 @@ import tensorflow_hub as hub
 splitfolders.ratio("images", output="dogs", seed=1337, ratio=(.6, .4), group_prefix=None, move=True)
 
 IMAGE_SHAPE = (224, 224)
-BATCH_SIZE = 32
+BATCH_SIZE = 256
 train_dir = "dogs/train/"
 test_dir = "dogs/val/"
 
