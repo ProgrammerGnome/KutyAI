@@ -39,14 +39,16 @@ train_data = train_datagen.flow_from_directory(
     train_dir,
     target_size=IMAGE_SHAPE,
     batch_size=BATCH_SIZE,
-    class_mode="categorical"
+    class_mode="categorical",
+    shuffle=True
 )
 print("Testing images:")
 test_data = test_datagen.flow_from_directory(
     test_dir,
     target_size=IMAGE_SHAPE,
     batch_size=BATCH_SIZE,
-    class_mode="categorical"
+    class_mode="categorical",
+    shuffle=True
 )
 
 data_dir = pathlib.Path("dogs/train")
@@ -89,7 +91,8 @@ augmented_train_data = train_datagen_augmented.flow_from_directory(
     train_dir,
     target_size=IMAGE_SHAPE,
     batch_size=BATCH_SIZE,
-    class_mode="categorical"
+    class_mode="categorical",
+    shuffle=True
 )
 
 combined_train_data = tf.data.Dataset.from_generator(
