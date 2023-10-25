@@ -7,3 +7,4 @@ Please download, extract the files and place them in the program-level folder.
 
 ## Warning!!!
 ### THE MODEL ARCHITECTURE IS NOT YET COMPLETED.
+The trained "KutyaJoModel" is an example model for a GUI application.
